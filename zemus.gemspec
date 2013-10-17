@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jdodson@cheerfulghost.com", "mark.tabler@fallingmanstudios.net"]
   spec.description   = %q{Embeds various media URLs as viewable content}
   spec.summary       = %q{Parses and embeds various media URLs as viewable content}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/jdodson/zemus"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
