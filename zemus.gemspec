@@ -6,8 +6,8 @@ require 'zemus/version'
 Gem::Specification.new do |spec|
   spec.name          = "zemus"
   spec.version       = Zemus::VERSION
-  spec.authors       = ["Jon Dodson"]
-  spec.email         = ["jon.dodson@livingsocial.com"]
+  spec.authors       = ["Jon Dodson", "Mark Tabler"]
+  spec.email         = ["jdodson@cheerfulghost.com"]
   spec.description   = %q{Embeds various media URLs as viewable content}
   spec.summary       = %q{Embeds various media URLs as viewable content}
   spec.homepage      = ""
