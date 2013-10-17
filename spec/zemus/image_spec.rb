@@ -6,4 +6,5 @@ describe Zemus::Image do
     Zemus::Image.new(url).to_embed.
       should eq("<img src='http://google.com/image.gif' class='img-responsive img-thumbnail' />")
   end
+
 end

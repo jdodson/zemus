@@ -1,6 +1,10 @@
 module Zemus
   class Soundcloud
 
+    def valid?(url)
+      url =~ /soundcloud.com/
+    end
+
     def initialize(url)
       @url = url
     end

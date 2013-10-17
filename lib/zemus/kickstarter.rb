@@ -1,6 +1,10 @@
 module Zemus
   class Kickstarter
 
+    def self.valid?(url)
+      url =~ /kickstarter.com\/projects\//
+    end
+
     def initialize(url)
       @url = url
     end

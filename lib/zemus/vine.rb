@@ -1,6 +1,10 @@
 module Zemus
   class Vine
 
+    def self.valid?(url)
+      url =~ /vine.co/
+    end
+
     def initialize(url)
       @url = url
     end

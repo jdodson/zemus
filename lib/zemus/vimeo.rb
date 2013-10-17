@@ -1,6 +1,10 @@
 module Zemus
   class Vimeo
 
+    def self.valid?(url)
+      url =~ /vimeo.com/
+    end
+
     def initialize(url)
       @url = url
     end

@@ -1,6 +1,14 @@
 module Zemus
   class Youtube
 
+    def self.valid?(url)
+      [ /^http(s?):\/\/youtube.com/, /^http(s?):\/\/www.youtube.com/, /^http(s?):\/\/www.m.youtube.com/,
+        /^http(s?):\/\/m.youtube.com/, /^http(s?)(s?):\/\/youtu.be/, /^http(s?):\/\/www.youtu.be/,
+        /^m.youtube.com/, /^youtu.be/, /^youtube.com/ ].map do |link_style|
+          url =~ link_style
+        end.any?
+    end
+
     def initialize(url)
       @url = url
     end

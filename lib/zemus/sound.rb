@@ -1,6 +1,10 @@
 module Zemus
   class Sound
 
+    def self.valid?(url)
+      url =~ /.mp3/
+    end
+
     def initialize(url)
       @url = url
     end
