@@ -1,6 +1,6 @@
 # Zemus
 
-TODO: Write a gem description
+Zemus is a ruby gem that translates URLs into embedable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
 
 ## Installation
 
@@ -27,3 +27,13 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## They that made the greatness
+
+Zemus was extracted from live code running on http://cheerfulghost.com by Jon Dodson and Mark Tabler.
+
+## Even more
+
+Zemus was named after the antagonist of Final Fantasy IV, which is pretty neat I think.
+
+http://finalfantasy.wikia.com/wiki/Zemus
