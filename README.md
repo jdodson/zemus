@@ -16,7 +16,7 @@ It currently translates the follow URLs to embedabble HTML:
 
 Add this line to your application's Gemfile:
 
-    gem 'zemus', :git => 'git@github.com:jdodson/zemus.git'
+    gem 'zemus', :git => 'https://github.com/jdodson/zemus.git'
 
 And then execute:
 
