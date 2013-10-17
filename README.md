@@ -30,7 +30,7 @@ TODO: Write usage instructions here
 
 ## They that made the greatness
 
-Zemus was extracted from live code running on http://cheerfulghost.com by Jon Dodson and Mark Tabler.
+Zemus was extracted from and is running in production at http://cheerfulghost.com by Jon Dodson and Mark Tabler.
 
 ## Even more
 
