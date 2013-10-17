@@ -28,7 +28,7 @@ TODO: Write usage instructions here
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-## They that made the greatness
+## They That Created The Greatness
 
 Zemus was extracted from and is running in production at http://cheerfulghost.com by Jon Dodson and Mark Tabler.
 
