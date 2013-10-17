@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "zemus"
   spec.version       = Zemus::VERSION
   spec.authors       = ["Jon Dodson", "Mark Tabler"]
-  spec.email         = ["jdodson@cheerfulghost.com"]
+  spec.email         = ["jdodson@cheerfulghost.com", "mark.tabler@fallingmanstudios.net"]
   spec.description   = %q{Embeds various media URLs as viewable content}
   spec.summary       = %q{Parses and embeds various media URLs as viewable content}
   spec.homepage      = ""
