@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Zemus::VERSION
   spec.authors       = ["Jon Dodson"]
   spec.email         = ["jon.dodson@livingsocial.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Embeds various media URLs as viewable content}
+  spec.summary       = %q{Embeds various media URLs as viewable content}
   spec.homepage      = ""
   spec.license       = "MIT"
 
