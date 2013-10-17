@@ -6,7 +6,9 @@ module Zemus
     end
 
     def to_embed
-      "You're going to Vimeo!"
+      id = @url.split('/').last
+
+      "<iframe src='http://player.vimeo.com/video/#{id}' width='100%' height='' frameborder='0'></iframe>"
     end
 
   end
