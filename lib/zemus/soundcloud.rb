@@ -1,7 +1,7 @@
 module Zemus
   class Soundcloud
 
-    def valid?(url)
+    def self.valid?(url)
       url =~ /soundcloud.com/
     end
 
