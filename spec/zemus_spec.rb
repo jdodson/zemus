@@ -46,4 +46,9 @@ describe Zemus do
     Zemus.embed(url).should eq("<iframe autosize='false' width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https://soundcloud.com/destructoid/super-mario-world-by-video'></iframe>")
   end
 
+  it "acceptance test for vimeo" do
+    url = "http://vimeo.com/21929292"
+
+    Zemus.embed(url).should eq("<iframe src='http://player.vimeo.com/video/21929292' width='100%' height='' frameborder='0'></iframe>")
+  end
 end
