@@ -24,9 +24,9 @@ And then execute:
 
 ## Usage
 
-    Zemus.embed("www.google.com/sample.gif")
+    Zemus.embed("http://i.imgur.com/r8JB38S.jpg")
 
-    Zemus.embed("youtube.com/watch?v=Ai7pMPCDHpo")
+    Zemus.embed("http://www.youtube.com/watch?v=bjAcMDGJcHI")
 
     Zemus.embed("http://www.podtrac.com/pts/redirect.mp3/content.duckfeed.tv/bsc/bsc_E001.mp3")
 
