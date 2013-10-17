@@ -1,8 +1,8 @@
 module Zemus
   class Image
 
-    def to_embed
-      "You're going to see stuff!"
+    def to_embed url
+      "<img src='#{url}' class='img-responsive img-thumbnail' />"
     end
 
   end
