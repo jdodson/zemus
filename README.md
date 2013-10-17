@@ -2,6 +2,16 @@
 
 Zemus is a ruby gem that translates URLs into embedable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
 
+It currently translates the follow URLs to embedabble HTML:
+
+* images
+* mp3s
+* youtube
+* vimeo
+* vine
+* kickstarter
+* soundcloud
+
 ## Installation
 
 Add this line to your application's Gemfile:
