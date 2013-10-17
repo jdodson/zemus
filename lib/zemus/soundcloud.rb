@@ -6,7 +6,7 @@ module Zemus
     end
 
     def to_embed
-      "You're going to Soundcloud!"
+      "<iframe autosize='false' width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=#{@url}'></iframe>"
     end
 
   end
