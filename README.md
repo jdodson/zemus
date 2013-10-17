@@ -16,19 +16,25 @@ It currently translates the follow URLs to embedabble HTML:
 
 Add this line to your application's Gemfile:
 
-    gem 'zemus'
+    gem 'zemus', :git => 'git@github.com:jdodson/zemus.git'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install zemus
-
 ## Usage
 
-TODO: Write usage instructions here
+    Zemus.embed("www.google.com/sample.gif")
+
+    Zemus.embed("youtube.com/watch?v=Ai7pMPCDHpo")
+
+    Zemus.embed("http://www.podtrac.com/pts/redirect.mp3/content.duckfeed.tv/bsc/bsc_E001.mp3")
+
+    Zemus.embed("https://soundcloud.com/destructoid/super-mario-world-by-video")
+
+    Zemus.embed("http://vimeo.com/21929292")
+
+    Zemus.embed("https://vine.co/v/bFPjjheVnau/embed/simple")
 
 ## Contributing
 
