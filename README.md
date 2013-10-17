@@ -44,6 +44,6 @@ Zemus was extracted from and is running in production at http://cheerfulghost.co
 
 ## Even more
 
-Zemus was named after the antagonist of Final Fantasy IV, which is pretty neat I think.
+Zemus was named after the antagonist of Final Fantasy IV.
 
 http://finalfantasy.wikia.com/wiki/Zemus
