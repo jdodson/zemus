@@ -57,4 +57,10 @@ describe Zemus do
 
     Zemus.embed(url).should eq("<iframe class='vine-embed' src='https://vine.co/v/bFPjjheVnau/embed/simple' width='100%' height='' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>")
   end
+
+  it "acceptance test for the generic fallback" do
+    url = "http://google.com/asdfhjklkjsdf/43123123/32124lkjklj123123/foo.html"
+
+    Zemus.embed(url).should eq("<a href='http://google.com/asdfhjklkjsdf/43123123/32124lkjklj123123/foo.html' target='_blank'>http://google.com/asdfhjklkjsdf/43123123..</a>")
+  end
 end

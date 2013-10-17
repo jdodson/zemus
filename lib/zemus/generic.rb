@@ -10,7 +10,14 @@ module Zemus
     end
 
     def to_embed
-      "<a href = #{@url}>#{@url}</a>"
+      url = @url
+
+      display = url
+      if display.length > 40
+        display = "#{display[0,40]}.."
+      end
+
+      "<a href='#{url}' target='_blank'>#{display}</a>"
     end
   end
 end
