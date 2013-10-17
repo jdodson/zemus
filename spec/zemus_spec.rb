@@ -51,4 +51,10 @@ describe Zemus do
 
     Zemus.embed(url).should eq("<iframe src='http://player.vimeo.com/video/21929292' width='100%' height='' frameborder='0'></iframe>")
   end
+
+  it "acceptance test for vine" do
+    url = "https://vine.co/v/bFPjjheVnau/embed/simple"
+
+    Zemus.embed(url).should eq("<iframe class='vine-embed' src='https://vine.co/v/bFPjjheVnau/embed/simple' width='100%' height='' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>")
+  end
 end
