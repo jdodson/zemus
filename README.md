@@ -36,13 +36,11 @@ And then execute:
 
     Zemus.embed("https://vine.co/v/bFPjjheVnau/embed/simple")
 
-## Contributing
+## TODO / Contributions
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+When we output HTML for images and other iframes we tack on some HTML and classes some people may not need.  For instance, to get the images we embed to be responsive we tack on the Bootstrap 3 "img-responsive img-thumbnail" classes.  We also put a link under the Kickstarter embed to take the person to the page itself.  I totally get some people may not want that so feel free to submit a patch to pull this stuff these extras to a config.
+
+If there is another URL you want to embed, submit the patch.  As long as you can create the embed from the URL itself, we will consider the patch.  Also, we currently want to keep the things we embed to HTML5 widgets.
 
 ## They That Created The Greatness
 
