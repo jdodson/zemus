@@ -1,8 +1,5 @@
-require_relative "zemus/version"
-require_relative "zemus/parser"
-require_relative "zemus/youtube"
-require_relative "zemus/kickstarter"
-
+path = File.expand_path('../zemus', __FILE__)
+Dir.glob(File.join(path, "/**/*.rb")).each { |f| require f }
 
 module Zemus
   
