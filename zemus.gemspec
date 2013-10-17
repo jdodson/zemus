@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jon Dodson", "Mark Tabler"]
   spec.email         = ["jdodson@cheerfulghost.com"]
   spec.description   = %q{Embeds various media URLs as viewable content}
-  spec.summary       = %q{Embeds various media URLs as viewable content}
+  spec.summary       = %q{Parses and embeds various media URLs as viewable content}
   spec.homepage      = ""
   spec.license       = "MIT"
 
