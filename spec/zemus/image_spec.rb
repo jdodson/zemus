@@ -2,7 +2,8 @@ require_relative('../spec_helper')
  
 describe Zemus::Image do
   it "embeds images" do
-    Zemus::Image.new.to_embed("http://google.com/image.gif").
+    url = "http://google.com/image.gif"
+    Zemus::Image.new(url).to_embed.
       should eq("<img src='http://google.com/image.gif' class='img-responsive img-thumbnail' />")
   end
 end
