@@ -14,7 +14,7 @@ module Zemus
     end
 
     def to_embed
-      "<iframe width='100%' height='' src='http://www.youtube.com/embed/#{youtube_id}?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
+      "<iframe width='100%' height='600' src='http://www.youtube.com/embed/#{youtube_id}?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
     end
 
     def youtube_id
