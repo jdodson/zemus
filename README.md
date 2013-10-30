@@ -28,6 +28,8 @@ And then execute:
 
     Zemus.embed("http://www.youtube.com/watch?v=bjAcMDGJcHI")
 
+    Zemus.embed("http://www.kickstarter.com/projects/sleepninja/monsters-ate-my-birthday-cake")
+
     Zemus.embed("http://www.podtrac.com/pts/redirect.mp3/content.duckfeed.tv/bsc/bsc_E001.mp3")
 
     Zemus.embed("https://soundcloud.com/destructoid/super-mario-world-by-video")
@@ -35,6 +37,8 @@ And then execute:
     Zemus.embed("http://vimeo.com/21929292")
 
     Zemus.embed("https://vine.co/v/bFPjjheVnau/embed/simple")
+
+    If Zemus can't automagically transfigure the URL it just returns it as a truncated link.
 
 ## TODO / Contributions
 
