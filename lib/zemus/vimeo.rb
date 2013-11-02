@@ -12,7 +12,7 @@ module Zemus
     def to_embed
       id = @url.split('/').last
 
-      "<iframe src='http://player.vimeo.com/video/#{id}' width='100%' height='600' frameborder='0'></iframe>"
+      "<iframe src='http://player.vimeo.com/video/#{id}' width='100%' height='600px' frameborder='0'></iframe>"
     end
 
   end

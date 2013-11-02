@@ -10,7 +10,7 @@ module Zemus
     end
 
     def to_embed
-      "<iframe autosize='false' width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=#{@url}'></iframe>"
+      "<iframe autosize='false' width='100%' height='166px' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=#{@url}'></iframe>"
     end
 
   end

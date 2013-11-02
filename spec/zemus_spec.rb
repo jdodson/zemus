@@ -29,7 +29,7 @@ describe Zemus do
       [ "", "http://", "http://www.", "https://", "https://www." ].each do |subdomain|
         url = "#{subdomain}#{url_format}"
 
-        Zemus.embed(url).should eq("<iframe width='100%' height='600' src='http://www.youtube.com/embed/Ai7pMPCDHpo?wmode=opaque' frameborder='0' allowfullscreen></iframe>")
+        Zemus.embed(url).should eq("<iframe width='100%' height='600px' src='http://www.youtube.com/embed/Ai7pMPCDHpo?wmode=opaque' frameborder='0' allowfullscreen></iframe>")
       end
     end
   end
@@ -43,19 +43,19 @@ describe Zemus do
   it "acceptance test for sound-claus" do
     url = "https://soundcloud.com/destructoid/super-mario-world-by-video"
   
-    Zemus.embed(url).should eq("<iframe autosize='false' width='100%' height='166' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https://soundcloud.com/destructoid/super-mario-world-by-video'></iframe>")
+    Zemus.embed(url).should eq("<iframe autosize='false' width='100%' height='166px' scrolling='no' frameborder='no' src='https://w.soundcloud.com/player/?url=https://soundcloud.com/destructoid/super-mario-world-by-video'></iframe>")
   end
 
   it "acceptance test for vimeo" do
     url = "http://vimeo.com/21929292"
 
-    Zemus.embed(url).should eq("<iframe src='http://player.vimeo.com/video/21929292' width='100%' height='600' frameborder='0'></iframe>")
+    Zemus.embed(url).should eq("<iframe src='http://player.vimeo.com/video/21929292' width='100%' height='600px' frameborder='0'></iframe>")
   end
 
   it "acceptance test for vine" do
     url = "https://vine.co/v/bFPjjheVnau/embed/simple"
 
-    Zemus.embed(url).should eq("<iframe class='vine-embed' src='https://vine.co/v/bFPjjheVnau/embed/simple' width='100%' height='600' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>")
+    Zemus.embed(url).should eq("<iframe class='vine-embed' src='https://vine.co/v/bFPjjheVnau/embed/simple' width='100%' height='600px' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>")
   end
 
   it "acceptance test for the generic fallback" do

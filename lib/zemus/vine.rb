@@ -10,7 +10,7 @@ module Zemus
     end
 
     def to_embed
-      "<iframe class='vine-embed' src='https://vine.co/v/#{vine_id}/embed/simple' width='100%' height='600' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>"
+      "<iframe class='vine-embed' src='https://vine.co/v/#{vine_id}/embed/simple' width='100%' height='600px' frameborder='0'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>"
     end
 
     def vine_id
