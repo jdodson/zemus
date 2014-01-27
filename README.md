@@ -50,6 +50,10 @@ If there is another URL you want to embed, submit the patch.  As long as you can
 
 Zemus was extracted from and is running in production at http://cheerfulghost.com by Jon Dodson and Mark Tabler.
 
+Contributions from:
+
+Travis Newman @travisnewman
+
 ## Even more
 
 Zemus was named after the antagonist of Final Fantasy IV.
