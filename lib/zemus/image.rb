@@ -11,7 +11,7 @@ module Zemus
     end
 
     def to_embed
-      "<img src='#{@url}' class='img-responsive img-thumbnail' />"
+      "<img src='#{@url}' class='img-responsive img-thumbnail' alt='#{@url}' />"
     end
 
   end
