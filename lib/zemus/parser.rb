@@ -3,7 +3,7 @@ module Zemus
     
     def self.url_classes
       [Image, Kickstarter, Sound, Soundcloud, Vimeo,
-      Vine, Youtube]
+      Vine, Youtube, Twitch]
     end
 
     def self.build_embedder(url)
