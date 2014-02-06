@@ -2,7 +2,7 @@
 
 Zemus is a ruby gem that translates URLs into embedable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
 
-It currently translates the follow URLs to embedabble HTML:
+It currently translates the following URLs to embedabble HTML in standard mode:
 
 * images
 * mp3s
@@ -11,6 +11,12 @@ It currently translates the follow URLs to embedabble HTML:
 * vine
 * kickstarter
 * soundcloud
+
+For embeddable elements that require flash, we have implemented a "dirty mode" that will allow these objects for browsers that can display them, and show a message about the lack of compatibility on browsers that don't support flash, such as mobile devices. For flash embeds, there are two hidden div classes, .zemusflashembed and .zemusnoflash, and some lightweight javascript will detect flash capability and display the proper one.
+
+In dirty mode, embedding the following URLs is also supported:
+
+* twitch
 
 ## Installation
 
@@ -21,6 +27,14 @@ Add this line to your application's Gemfile:
 And then execute:
 
     $ bundle
+	
+**If you only want to use standard mode and embed HTML5 widgets only, you're done. Skip to usage below.**
+
+To enable dirty mode, enter the following command:
+
+    $ rails g zemus:install
+	
+This will install the necessary javascript and css files to your project's app/assets directory. At runtime, Zemus will check for the existence of these files to determine whether to embed the supported flash or to fall back to normal mode and return a truncated link.
 
 ## Usage
 
@@ -38,7 +52,11 @@ And then execute:
 
     Zemus.embed("https://vine.co/v/bFPjjheVnau/embed/simple")
 
-    If Zemus can't automagically transfigure the URL it just returns it as a truncated link.
+If Zemus can't automagically transfigure the URL it just returns it as a truncated link.
+
+## Styling
+
+Zemus will output different embedded URLs with different classes, depending on the needs of the particular service. Check the generated HTML output in your project to find what to style.
 
 ## TODO / Contributions
 
