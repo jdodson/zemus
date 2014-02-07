@@ -2,7 +2,7 @@
 
 Zemus is a ruby gem that translates URLs into embedable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
 
-It currently translates the following URLs to embedabble HTML in standard mode:
+Zemus translates the following URLs to embedabble HTML in standard HTML5 mode:
 
 * images
 * mp3s
@@ -12,9 +12,9 @@ It currently translates the following URLs to embedabble HTML in standard mode:
 * kickstarter
 * soundcloud
 
-For embeddable elements that require flash, we have implemented a "dirty mode" that will allow these objects for browsers that can display them, and show a message about the lack of compatibility on browsers that don't support flash, such as mobile devices. For flash embeds, there are two hidden div classes, .zemusflashembed and .zemusnoflash, and some lightweight javascript will detect flash capability and display the proper one.
+For embeddable elements that require flash, we have implemented a "dirty mode" that will allow these objects to be displayed in browsers that support it.
 
-In dirty mode, embedding the following URLs is also supported:
+Zemus translates the following URLs to embeddable Flash HTML in dirty mode:
 
 * twitch
 
@@ -26,19 +26,13 @@ Add this line to your application's Gemfile:
 
 And then execute:
 
-    $ bundle
-	
-**If you only want to use standard mode and embed HTML5 widgets only, you're done. Skip to usage below.**
+    bundle
 
 To enable dirty mode, enter the following command:
 
-    $ rails g zemus:install
+    rails g zemus:install
 	
-This will install the necessary javascript and css files to your project's app/assets directory. At runtime, Zemus will check for the existence of these files to determine whether to embed the supported flash or to fall back to normal mode and return a truncated link.
-
-Be sure to precompile your assets before going live to ensure the zemus.js and zemus.css files get included.
-
-    $ rake assets:precompile
+This will install the necessary javascript and css files to your project's app/assets directory.
 	
 
 ## Usage
