@@ -36,6 +36,11 @@ To enable dirty mode, enter the following command:
 	
 This will install the necessary javascript and css files to your project's app/assets directory. At runtime, Zemus will check for the existence of these files to determine whether to embed the supported flash or to fall back to normal mode and return a truncated link.
 
+Be sure to precompile your assets before going live to ensure the zemus.js and zemus.css files get included.
+
+    $ rake assets:precompile
+	
+
 ## Usage
 
     Zemus.embed("http://i.imgur.com/r8JB38S.jpg")
