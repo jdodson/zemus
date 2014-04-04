@@ -17,6 +17,10 @@ module Zemus
       "<iframe width='100%' height='600px' src='http://www.youtube.com/embed/#{youtube_id}?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
     end
 
+    def to_embed_image
+      "http://img.youtube.com/vi/#{youtube_id}/hqdefault.jpg"
+    end
+
     def youtube_id
       id = ''
 
