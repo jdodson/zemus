@@ -2,14 +2,7 @@ module Zemus
   class Parser
     
     def self.url_classes
-      zemus_js_dir = 'app/assets/javascripts/zemus.js'
-      if File.exist?(zemus_js_dir)
-        [Image, Kickstarter, Sound, Soundcloud, Vimeo,
-         Vine, Youtube, Twitch]
-      else
-         [Image, Kickstarter, Sound, Soundcloud, Vimeo,
-          Vine, Youtube]
-      end
+      [Image, Kickstarter, Sound, Soundcloud, Vimeo, Vine, Youtube]
     end
 
     def self.build_embedder(url)

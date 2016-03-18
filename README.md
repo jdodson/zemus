@@ -12,12 +12,6 @@ Zemus translates the following URLs to embedabble HTML in standard HTML5 mode:
 * kickstarter
 * soundcloud
 
-For embeddable elements that require flash, we have implemented a "dirty mode" that will allow these objects to be displayed in browsers that support it.
-
-Zemus translates the following URLs to embeddable Flash HTML in dirty mode:
-
-* twitch
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -27,10 +21,6 @@ Add this line to your application's Gemfile:
 And then execute:
 
     bundle
-
-To enable dirty mode, enter the following command:
-
-    rails g zemus:install
 	
 This will install the necessary javascript and css files to your project's app/assets directory.
 	
