@@ -1,6 +1,6 @@
 module Zemus
-  class Generic   
-    
+  class Generic
+
     def self.valid?(url)
       true
     end

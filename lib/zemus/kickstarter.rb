@@ -14,7 +14,7 @@ module Zemus
     end
 
     def to_embed
-      embed = "<iframe width='100%' height='600px' scrolling='no' src='http://www.kickstarter.com/projects/#{kickstarter_id}/widget/video.html' frameborder='0'> </iframe>"
+      embed = "<iframe width='100%' height='600px' scrolling='no' src='https://www.kickstarter.com/projects/#{kickstarter_id}/widget/video.html' frameborder='0'> </iframe>"
       embed += "<a href='#{url}' target='_blank' class='btn btn-default btn-xs'><i class='glyphicon glyphicon-heart'></i> Back this on Kickstarter!</a>"
 
       embed

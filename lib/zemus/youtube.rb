@@ -14,7 +14,7 @@ module Zemus
     end
 
     def to_embed
-      "<iframe width='100%' height='600px' src='http://www.youtube.com/embed/#{youtube_id}?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
+      "<iframe width='100%' height='600px' src='https://www.youtube.com/embed/#{youtube_id}?wmode=opaque' frameborder='0' allowfullscreen></iframe>"
     end
 
     def to_embed_image
@@ -25,7 +25,7 @@ module Zemus
       id = ''
 
       url = @url.gsub("&feature=player_embedded", "")
-      
+
       if url =~ /\?v=/
         id = url.split('?v=').last.split("&").first
       elsif url =~ /&v=/
@@ -33,7 +33,7 @@ module Zemus
       else
         id = url.split('/').last.split("&").first
       end
-      
+
       id
     end
 
