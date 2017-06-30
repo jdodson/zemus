@@ -12,7 +12,7 @@ module Zemus
     def to_embed
       filename = @url.split("/").last
 
-      embed = "<audio controls='controls' class='media-object'>"
+      embed = "<audio controls='controls' class='media-object' preload='none'>"
       embed += "<source src='#{@url}' type='audio/mpeg' />"
       embed += "</audio>"
       embed += "<div><a href='#{@url}' target='_blank' class='img-thumbnail' download='#{filename}'><i class='glyphicon glyphicon-music'></i> Download this podcast.</a></div>"
