@@ -1,6 +1,6 @@
 # Zemus
 
-Zemus is a ruby gem that translates URLs into embedable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
+Zemus is a ruby gem that translates URLs into embeddable code you can insert on a page.  It does its magic by simply inspecting and hacking up the URL itself, it makes no external requests to a webservice.
 
 Zemus translates the following URLs to embedabble HTML in standard HTML5 mode:
 
